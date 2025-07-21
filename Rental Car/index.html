@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car</title>
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- IMPORT BOXICONS -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header_title">Car<span>Rental</span></h1>
+        <div class="header_nav-auth">
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_auth">
+                <button class="btn-secondary">Register</button>
+                <button class="btn-primary">Login</button>
+            </div>
+        </div>
+        <!-- FOR MOBILE SCREEN -->
+        <div class="header_menu">
+            <i class='bxr  bx-menu-right'></i>
+            <i class='bxr  bx-x'></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="home section-menu">
+            <div class="home_content">
+                <h1 class="home_title">
+                    <span>Rent the car </span>
+                    You Need, When You Need it.
+                </h1>
+                <p class="home_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores excepturi, illo voluptates
+                    libero nulla?
+                </p>
+                <button class="btn-primary">
+                    Discover Now
+                    <i class='bxr  bx-arrow-right-stroke'></i>
+                </button>
+
+                <form class="home_search-car">
+                    <div class="text-input">
+                        <label for="location">Pickup Location</label>
+                        <input type="text" name="location" id="location" placeholder="Pickup location">
+                    </div>
+                    <div class="text-input">
+                        <label for="pickup date">Pickup Date</label>
+                        <input type="text" name="pickup date" id="pickup date" placeholder="Pickup Date">
+                    </div>
+                    <div class="text-input">
+                        <label for="return-date">Return Date</label>
+                        <input type="text" name="return-date" id="return-date" placeholder="Return Date">
+                    </div>
+                    <button class="btn-primary">
+                        <i class='bxr  bx-search-alt'></i>
+                        Search
+                    </button>
+                </form>
+            </div>
+
+            <div class="home_reactangle"></div>
+            <img class="home_image" src="images/golden-car.png" alt="">
+        </section>
+
+        <!-- CARS -->
+        <section id="cars" class="cars section-menu">
+            <h1 class="title-section">Latest <span>Inventory</span></h1>
+            <p class="desc-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. At non cum et facere
+                molestiae vel.</p>
+
+            <div class="cars_list-btn">
+                <button class="btn-primary" data-brand="all">All</button>
+                <button class="btn-secondary" data-brand="tesla">Tesla</button>
+                <button class="btn-secondary" data-brand="toyota">Toyota</button>
+            </div>
+
+            <div class="cars_list-card">
+                <div class="cars_card" data-brand="tesla">
+                    <img class="cars_card-car-img" src="images/tesla-3.png">
+                    <h1>Tesla Model 3</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="tesla">
+                    <img class="cars_card-car-img" src="images/tesla-s.png">
+                    <h1>Tesla Model S</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="tesla">
+                    <img class="cars_card-car-img" src="images/tesla-x.png">
+                    <h1>Tesla Model X</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="tesla">
+                    <img class="cars_card-car-img" src="images/tesla_model_y.png">
+                    <h1>Tesla Model Y</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="toyota">
+                    <img class="cars_card-car-img" src="images/toyota-2755.png">
+                    <h1>toyota 2755</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="toyota">
+                    <img class="cars_card-car-img" src="images/toyota-supra.png">
+                    <h1>toyota supra</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="toyota">
+                    <img class="cars_card-car-img" src="images/century.png">
+                    <h1>Toyota Century</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cars_card" data-brand="toyota">
+                    <img class="cars_card-car-img" src="images/crown_crossover.png">
+                    <h1>Toyota Crown</h1>
+                    <div class="cars_card-info">
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-chair'></i>
+                            <span>6 Seat</span>
+                        </div>
+                        <div class="cars_card-info-item">
+                            <i class='bxr  bxs-tachometer'></i>
+                            <span>80 Km</span>
+                        </div>
+                    </div>
+                    <div class="cars_card-price-rent">
+                        <h3 class="cars_price">$99 <span>/Day</span></h3>
+                        <button class="btn-primary">
+                            Rent Now
+                            <i class='bxr  bxs-plus'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about section-menu">
+            <img class="about_img-car" src="images/white-car.png">
+            <div class="about_circle"></div>
+
+            <div class="about_content">
+                <h1 class="title-section about_title">Why Choose Us?</h1>
+                <p class="desc-section about_desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias molestiae
+                    reprehenderit veritatis facilis autem!
+                </p>
+
+                <div class="about_list-info">
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-star'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h2>Wide Selection of Quality cars</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro magnam repellendus
+                                mollitia deserunt at?</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-wallet-note'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h2>Affordable Rates with No Hidden Fees</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro magnam repellendus
+                                mollitia deserunt at?</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-timer'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h2>Excelent Customer Service & 24/7 Support</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro magnam repellendus
+                                mollitia deserunt at?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="testimonials section-menu">
+            <h1 class="title-section">What<span>Our Costumers</span> Say</h1>
+            <p class="desc-section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint blanditiis suscipit totam illum
+                tempora.
+            </p>
+
+            <div class="testimonials_list-Card">
+                <div class="testimonials_card">
+                    <div class="testimonials_card-img">
+                        <img src="images/face-itali-melo.jpg">
+                    </div>
+                    <h2 class="testimonials_card-name">Itail Melo</h2>
+                    <div class="testimonials_card-rate">
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <span>5.0</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste quidem consequatur
+                        aliquam laudantium laborum?</p>
+                </div>
+                <div class="testimonials_card">
+                    <div class="testimonials_card-img">
+                        <img src="images/face-erik-lucatero.jpg">
+                    </div>
+                    <h2 class="testimonials_card-name">Eric Lucatero</h2>
+                    <div class="testimonials_card-rate">
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <span>5.0</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste quidem consequatur
+                        aliquam laudantium laborum?</p>
+                </div>
+                <div class="testimonials_card">
+                    <div class="testimonials_card-img">
+                        <img src="images/face-joseph-gonzales.jpg">
+                    </div>
+                    <h2 class="testimonials_card-name">Joseph Gonzales</h2>
+                    <div class="testimonials_card-rate">
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <i class='bxr  bxs-star'></i>
+                        <span>5.0</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste quidem consequatur
+                        aliquam laudantium laborum?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section-menu">
+            <h1 class="title-section contact_title">
+                Contact Us
+            </h1>
+            <p class="desc-section contact_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt distinctio laborum, iure a
+                repudiandae.
+            </p>
+
+            <div class="contact_content">
+                <form class="contact_form" action="#">
+
+                    <button class="btn-primary" type="submit">Submit</button>
+                    <div class="text-input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Your message" rows="5"></textarea>
+                    </div>
+                    <div class="text-input">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div class="text-input">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="Your full name">
+                    </div>
+
+                </form>
+
+                <div class="contact_list-info">
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-location-alt-2'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h3>Location</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, incidunt.</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-envelope'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h3>Email</h3>
+                            <p>email@email.com</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info-icon">
+                            <i class='bxr  bxs-phone'></i>
+                        </div>
+                        <div class="card-info-text">
+                            <h3>Phone</h3>
+                            <p>+123 456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer section-menu">
+            <div class="footer_content">
+                <div>
+                    <h1>CarRental</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut, facere architecto veniam
+                        aliquid libero?</p>
+                </div>
+                <div class="footer_menu">
+                    <span class="footer_menu-title">Menu</span>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer_menu">
+                    <span class="footer_menu-title">Follow Us</span>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_divider"></div>
+            <p class="footer_copyright">
+                &copy; 2025 Rental Car | <strong>Crafted by Malik Asjad</strong>
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            delay: 400,
+            distance: '60px',
+            duration: 2000
+        });
+
+        // COMPONENTS
+        ScrollReveal().reveal('.title-section');
+        ScrollReveal().reveal('.desc-section', {
+            delay: 600,
+        });
+
+        // HOME
+        ScrollReveal().reveal('.home_title');
+        ScrollReveal().reveal('.home_desc', {
+            delay: 600
+        });
+        ScrollReveal().reveal('.home_content .btn-primary', {
+            delay: 800
+        });
+        ScrollReveal().reveal('.home_image', {
+            delay: 600,
+            origin: 'right',
+            duration: 2500
+        });
+        ScrollReveal().reveal('.home_search-car', {
+            delay: 1000,
+            origin: 'left'
+
+        });
+
+        // CARS
+        ScrollReveal().reveal('.cars_list-btn button', {
+            delay: 600,
+            interval: 300
+        });
+        ScrollReveal().reveal('.cars_list-card .cars_card', {
+            delay: 1200,
+            interval: 300
+        });
+
+        // ABOUT
+        ScrollReveal().reveal('.about_img-car', {
+            delay: 600,
+            duration: 2500,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.about_list-info .card-info', {
+            delay: 1000,
+            interval: 600
+        });
+
+        // TESTIMONIALS
+        ScrollReveal().reveal('.testimonials_list-Card .testimonials_card', {
+            delay: 1000,
+            interval: 600
+        });
+
+        // CONTACT
+        ScrollReveal().reveal('.contact_form .text-input', {
+            delay: 1000,
+            interval: 600
+        });
+        ScrollReveal().reveal('.contact-form .btn-primary', {
+            delay: 2500,
+        });
+        ScrollReveal().reveal('.contact_list-info .card-info', {
+            delay: 1000,
+            interval: 600
+        });
+    </script>
+</body>
+
+</html>
